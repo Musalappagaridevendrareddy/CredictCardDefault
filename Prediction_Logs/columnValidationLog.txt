@@ -134,3 +134,63 @@
 2022-02-22/21:28:15		Column Length Validation Completed!!
 2022-02-22/21:34:42		Column Length Validation Started!!
 2022-02-22/21:34:42		Column Length Validation Completed!!
+2022-03-06/15:25:08		Column Length Validation Started!!
+2022-03-06/15:25:09		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/15:25:09		Column Length Validation Completed!!
+2022-03-06/15:27:52		Column Length Validation Started!!
+2022-03-06/15:27:52		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/15:27:52		Column Length Validation Completed!!
+2022-03-06/15:30:23		Column Length Validation Started!!
+2022-03-06/15:30:23		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/15:30:23		Column Length Validation Completed!!
+2022-03-06/15:45:41		Column Length Validation Started!!
+2022-03-06/15:45:41		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/15:45:41		Column Length Validation Completed!!
+2022-03-06/15:49:16		Column Length Validation Started!!
+2022-03-06/15:49:16		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/15:49:16		Column Length Validation Completed!!
+2022-03-06/16:12:20		Column Length Validation Started!!
+2022-03-06/16:12:20		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/16:12:20		Column Length Validation Completed!!
+2022-03-06/16:15:52		Column Length Validation Started!!
+2022-03-06/16:15:52		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/16:15:52		Column Length Validation Completed!!
+2022-03-06/16:18:05		Column Length Validation Started!!
+2022-03-06/16:18:05		Column Length Validation Completed!!
+2022-03-06/16:23:19		Column Length Validation Started!!
+2022-03-06/16:23:20		Column Length Validation Completed!!
+2022-03-06/16:29:41		Column Length Validation Started!!
+2022-03-06/16:29:41		Column Length Validation Completed!!
+2022-03-06/16:40:16		Column Length Validation Started!!
+2022-03-06/16:40:16		Column Length Validation Completed!!
+2022-03-06/16:41:05		Column Length Validation Started!!
+2022-03-06/16:41:05		Column Length Validation Completed!!
+2022-03-06/18:42:01		Column Length Validation Started!!
+2022-03-06/18:42:01		Column Length Validation Completed!!
+2022-03-06/18:44:49		Column Length Validation Started!!
+2022-03-06/18:44:49		Column Length Validation Completed!!
+2022-03-06/18:54:25		Column Length Validation Started!!
+2022-03-06/18:54:25		Column Length Validation Completed!!
+2022-03-06/18:57:08		Column Length Validation Started!!
+2022-03-06/18:57:08		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/18:57:08		Column Length Validation Completed!!
+2022-03-06/19:01:36		Column Length Validation Started!!
+2022-03-06/19:01:37		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/19:01:37		Column Length Validation Completed!!
+2022-03-06/19:06:20		Column Length Validation Started!!
+2022-03-06/19:06:20		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/19:06:20		Column Length Validation Completed!!
+2022-03-06/19:13:23		Column Length Validation Started!!
+2022-03-06/19:13:23		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/19:13:23		Column Length Validation Completed!!
+2022-03-06/19:15:51		Column Length Validation Started!!
+2022-03-06/19:15:51		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/19:15:51		Column Length Validation Completed!!
+2022-03-06/19:28:04		Column Length Validation Started!!
+2022-03-06/19:28:04		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/19:28:04		Column Length Validation Completed!!
+2022-03-06/19:29:55		Column Length Validation Started!!
+2022-03-06/19:29:55		Column Length Validation Completed!!
+2022-03-06/20:14:20		Column Length Validation Started!!
+2022-03-06/20:14:21		Invalid Column Length for the file!! File moved to Bad Raw Folder :: creditCardFraud_28011963_120213.csv
+2022-03-06/20:14:21		Column Length Validation Completed!!

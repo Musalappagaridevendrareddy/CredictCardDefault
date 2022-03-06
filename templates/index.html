@@ -135,8 +135,14 @@
 								{{ path }}
 							{% endif %}
 						</div>
+						<div class="col px-md-5" align="center">
+							{% if filename %}
+								<a href="/return-files/{{filename}}" target="blank"><button class='btn btn-secondary btn-lg'>Download</button></a>
+							{% endif %}
+						</div>
 					</div>
 				</div>
+
 			</div>						
 		</div>
 	</section>
