@@ -14,8 +14,8 @@ os.putenv('LC_ALL', 'en_US.UTF-8')
 app = Flask(__name__)
 # dashboard.bind(app)
 CORS(app)
-UPLOAD_FOLDER = 'Prediction_Output_File/'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+upload_folder = 'Prediction_Output_File/'
+# app.config['UPLOAD_FOLDER'] = upload_folder
 
 
 @app.route("/", methods=['GET'])
@@ -28,8 +28,21 @@ def home():
 @cross_origin()
 def predictRouteClient():
     try:
+        if os.path.exists('Prediction_Output_File'):
+            files = os.listdir('Prediction_Output_File')
+            filtered = [file for file in files if file.endswith('.csv')]
+            for file in filtered:
+                p = os.path.join('Prediction_Output_File', file)
+                os.remove(p)
         if request.method == 'POST' and request.form.get('action1') == 'Custom File Predict':
             f = request.files['csvfile']
+            if os.path.exists('upload_data'):
+                files = os.listdir('upload_data')
+                filtered = [file for file in files if file.endswith('.csv')]
+                for file in filtered:
+                    p = os.path.join('upload_data', file)
+                    os.remove(p)
+
             f.save('upload_data/' + f.filename)
             path = 'upload_data'
             pred_val = pred_validation(path)  # object initialization
@@ -39,8 +52,8 @@ def predictRouteClient():
             pred = prediction(path)  # object initialization
 
             # predicting for dataset present in database
-            path = pred.predictionFromModel()
-            return render_template('index.html', path="Prediction File created at %s!!!" % path, filename='Predictions.csv')
+            path = pred.predictionFromModel('Custom')
+            return render_template('index.html', path="Prediction File created at %s!!!" % path, filename1='Custom_Predictions.csv')
         elif request.method == 'POST' and request.form.get('action2') == 'Default File Predict':
             path = 'Prediction_Batch_files'
             pred_val = pred_validation(path)  # object initialization
@@ -50,8 +63,8 @@ def predictRouteClient():
             pred = prediction(path)  # object initialization
 
             # predicting for dataset present in database
-            path = pred.predictionFromModel()
-            return render_template('index.html', path="Prediction File created at %s!!!" % path, filename='Predictions.csv')
+            path = pred.predictionFromModel('Default')
+            return render_template('index.html', path="Prediction File created at %s!!!" % path, filename2='Default_Predictions.csv')
 
     except ValueError:
 
@@ -97,11 +110,12 @@ def trainRouteClient():
 
 @app.route('/return-files/<filename>')
 def return_files_tut(filename):
-    file_path = UPLOAD_FOLDER + filename
+    file_path = upload_folder + filename
     return send_file(file_path, as_attachment=True, attachment_filename='')
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    # port = int(os.environ.get('PORT', 5000))
+    # app.run(host='0.0.0.0', port=port)
+    app.run()
 

@@ -14,7 +14,7 @@ class prediction:
         self.log_writer = logger.App_Logger()
         self.pred_data_val = Prediction_Data_validation(path)
 
-    def predictionFromModel(self):
+    def predictionFromModel(self, type_name):
 
         try:
             self.pred_data_val.deletePredictionFile() #deletes the existing prediction file from last run!
@@ -53,8 +53,8 @@ class prediction:
                 result=(model.predict(cluster_data))
 
             final= pd.DataFrame(list(zip(result)),columns=['Predictions'])
-            path="Prediction_Output_File/Predictions.csv"
-            final.to_csv("Prediction_Output_File/Predictions.csv",header=True,mode='a+') #appends result to prediction file
+            path=f"Prediction_Output_File/{type_name}_Predictions.csv"
+            final.to_csv(f"Prediction_Output_File/{type_name}_Predictions.csv",header=True,mode='a+') #appends result to prediction file
             self.log_writer.log(self.file_object,'End of Prediction')
         except Exception as ex:
             self.log_writer.log(self.file_object, 'Error occured while running the prediction!! Error:: :: %s' % ex)
